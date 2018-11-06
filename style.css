@@ -1,0 +1,136 @@
+*,body{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    src: url(roboto/Roboto-Medium.ttf);
+    font-family: med;
+
+}
+
+.profile{
+    width: 100%;
+    height: 600px;
+    background-color: gainsboro;
+    min-height: 500px;
+    
+}
+.about{
+    width: 100%;
+    min-height: 500px;
+    
+}
+
+#foto{
+    display: block;
+    position: relative;
+    top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    border: 3px solid white;
+    
+}
+#nama{
+    display: block;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 40px;
+    font-family: med;
+}
+#info{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+.about p{
+    position: relative;
+    top: 5px;
+    text-align: center;
+    font-family: med;
+    font-size: 40px;
+}
+hr{
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 30px;
+    
+}
+.box div{
+    padding-top: 30px;
+ 
+}
+.gallery{
+    width: 100%;
+    min-height: 400px;
+    background-color: gainsboro;
+}
+.gallery hr{
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border: 1px solid black;
+}
+.gallery p{
+    position: relative;
+    top: 20px;
+    text-align: center;
+    font-family: med;
+    font-size: 40px;
+}
+.isi{
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+    width: 999px;
+    grid-gap: 33px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+/* responsive */
+@media (min-width:425px) and (max-width:500px){
+    .about{
+        width: 100%;
+        min-height: 900px;
+        
+    }
+    
+    .box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .isi{
+        display:grid;
+        width: 100%;
+        grid-template-columns: repeat(1,300px);
+        grid-template-rows: repeat(6,auto);
+        grid-gap: 33px;
+        margin-top: 30px;
+        
+    }
+    .isi div{
+        padding-left: 100px;
+        
+    }
+}
